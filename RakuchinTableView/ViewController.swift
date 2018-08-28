@@ -12,23 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var hogeTableView: UITableView!
     
-    enum Section {
+    enum SectionType {
         case section1
         case section2
         case section3
     }
-    enum Cell {
+    enum CellType {
         case aaa
         case bbb
         case ccc
     }
     
-    let sections:[Section] = [.section1,
-                              .section2,
-                              .section3]
-    let cells:[Section:[Cell]] = [.section1:[.aaa,.bbb,.ccc],
-                                  .section2:[.aaa,.aaa,.bbb,.bbb,.ccc,.ccc],
-                                  .section3:[.ccc,.ccc,.ccc]]
+    let sectionTypes:[SectionType] = [.section1,
+                                      .section2,
+                                      .section3]
+    let cellTypes:[SectionType:[CellType]] = [.section1:[.aaa,.bbb,.ccc],
+                                              .section2:[.aaa,.aaa,.bbb,.bbb,.ccc,.ccc],
+                                              .section3:[.ccc,.ccc,.ccc]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,17 +42,17 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
+        return sectionTypes.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cells[sections[section]]!.count
+        return cellTypes[sectionTypes[section]]!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = cells[sections[indexPath.section]]![indexPath.row]
+        let cellType = cellTypes[sectionTypes[indexPath.section]]![indexPath.row]
         
-        switch cell {
+        switch cellType {
         case .aaa:
             let cell = tableView.dequeueReusableCell(with: AAATableViewCell.self, for: indexPath)
             return cell

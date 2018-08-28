@@ -36,6 +36,7 @@
 		DAAE861621351B28001E4D8F /* BBBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE861521351B28001E4D8F /* BBBTableViewCell.swift */; };
 		DAAE861821351B32001E4D8F /* CCCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE861721351B32001E4D8F /* CCCTableViewCell.swift */; };
 		DAAE861A21351BBA001E4D8F /* SectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE861921351BBA001E4D8F /* SectionHeaderTableViewCell.swift */; };
+		DAAE861C21352491001E4D8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAE861B21352491001E4D8F /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		DAAE861521351B28001E4D8F /* BBBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBBTableViewCell.swift; sourceTree = "<group>"; };
 		DAAE861721351B32001E4D8F /* CCCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCTableViewCell.swift; sourceTree = "<group>"; };
 		DAAE861921351BBA001E4D8F /* SectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DAAE861B21352491001E4D8F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				DAAE85AF21351A00001E4D8F /* Assets.xcassets */,
 				DAAE85B121351A00001E4D8F /* LaunchScreen.storyboard */,
 				DAAE85B421351A00001E4D8F /* Info.plist */,
+				DAAE861B21352491001E4D8F /* SecondViewController.swift */,
 			);
 			path = RakuchinTableView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				DAAE860021351AC5001E4D8F /* UIView+.swift in Sources */,
 				DAAE85AB213519FA001E4D8F /* ViewController.swift in Sources */,
 				DAAE861421351B1F001E4D8F /* AAATableViewCell.swift in Sources */,
+				DAAE861C21352491001E4D8F /* SecondViewController.swift in Sources */,
 				DAAE860C21351AC5001E4D8F /* UITableView+.swift in Sources */,
 				DAAE860B21351AC5001E4D8F /* UIImage+.swift in Sources */,
 				DAAE85FE21351AC5001E4D8F /* NSObject+.swift in Sources */,
